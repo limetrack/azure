@@ -10,12 +10,14 @@
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
   "dependencies": {
+    "@azure/storage-blob": "^12.9.0",
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
     "@emotion/server": "latest",
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
+    "axios": "^0.27.2",
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
