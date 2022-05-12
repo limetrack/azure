@@ -37,3 +37,11 @@ steps:
   displayName: 'Publish Artifact: TestApp'
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(665413f0-ca8c-4b20-a489-c24fbee4d258)'
+    appType: 'webApp'
+    WebAppName: 'testetelier'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
