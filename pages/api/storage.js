@@ -7,7 +7,7 @@ const storage_params = (req, res) => {
     accountName: process.env.STORAGE_ACCOUNT_NAME,
   };
 
-  res.status(200).json(storageParams).end();
+  res.status(200).json(storageParams);
 };
 
 export default storage_params;
